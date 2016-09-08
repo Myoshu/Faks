@@ -21,8 +21,6 @@ public:
     T** getMatrica();
     void istampajMatricu();
 
-    T& operator()(int redovi, int kolone);
-
     ~Matrica();
 };
 
@@ -94,12 +92,6 @@ void Matrica<T>::istampajMatricu() {
         }
         cout << endl;
     }
-}
-
-template <class T>
-T& Matrica<T>::operator()(int red, int kol) {
-    if((kol >=0 && kol <=kolone) && (red >=0 && red<=redovi)) return matrica[redovi][kolone];
-    else perror("Granice su prekoracene.");
 }
 
 template <class T>
