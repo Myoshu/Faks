@@ -13,12 +13,12 @@ int main() {
     Matrica<tip> matrica1(redovi, kolone);
     matrica1.istampajMatricu();
 
-    cout << "Stampanje matrice dva: " << endl;
     Matrica<tip> matrica2 = matrica1;
 
     tip **element = matrica2.getMatrica();
     element[0][0] = 9;
 
+    cout << "Stampanje matrice dva: " << endl;
     matrica2.istampajMatricu();
 
     cout << "Stampanje matrice jedan: " << endl;
