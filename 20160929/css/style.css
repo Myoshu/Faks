@@ -1,0 +1,12 @@
+body {
+	text-align: center;
+	margin-top: 50px;
+	font-family: "Open Sans", sans-serif;
+}
+.board {
+	width: 150px;
+	cursor: pointer;
+}
+.info {
+	font-size: 25px;
+}
